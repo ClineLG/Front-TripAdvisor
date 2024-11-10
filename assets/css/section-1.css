@@ -1,0 +1,420 @@
+/* section 1///////////////////////// */
+main {
+  /* margin-top: 55px; */
+  padding-top: 75px;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 27px;
+}
+
+span.red-H1 {
+  color: #ff5d5d;
+}
+.titre p {
+  margin-top: -5px;
+}
+.titre p,
+.titre a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+.section1 .button-tourist {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  /* border: #333333 3px solid; */
+
+  /* border: grey solid 1px; */
+}
+.section1 nav button {
+  flex: 1;
+  height: 67px;
+  color: black;
+  /* border-width: thin; */
+  font-family: TS-Reg;
+  background-color: white;
+  border-radius: 15px;
+  border: black 1px solid;
+  /* padding: 10px; */
+}
+
+.button-tourist button:nth-child(6),
+.button-tourist button:nth-child(7) {
+  display: none;
+}
+
+.section1 button:hover {
+  background-color: black;
+}
+
+.button-tourist a {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  padding: 10px;
+}
+
+.button-tourist a i {
+  font-size: 20px;
+}
+.section1 nav.button-tourist a:hover {
+  color: white;
+}
+
+/* div images */
+.image-paris {
+  /* border: #ff5d5d solid 3px; */
+  width: 100%;
+  height: 429px;
+  display: flex;
+  gap: 1px;
+}
+
+.img-paris-1 img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.column-picture-paris img:first-child:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.column-picture-paris img:nth-child(2):hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.img-paris-1 {
+  height: 100%;
+  position: relative;
+}
+
+.column-picture-paris {
+  height: 100%;
+  width: 484px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.img-paris-1 img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-paris .column-picture-paris img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.MorePictures {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 8px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  border: none;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.MorePictures a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+.MorePictures i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.image-paris .img-paris-1 .MorePictures:hover {
+  cursor: pointer;
+  background-color: #a6a6a6;
+}
+
+/* legende et nav sous pix paris */
+
+.section1 .sub-pix {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* border: #333333 solid 1px; */
+
+  /* border: #333333 solid 1px; */
+}
+
+.sub-pix nav {
+  display: flex;
+  justify-content: flex-start;
+  /* border: #333333 solid 1px; */
+  gap: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.sub-pix nav a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+.sub-pix nav a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.sub-pix p {
+  font-size: 12px;
+
+  line-height: 22px;
+}
+
+/* présentation paris */
+.presentation-paris {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 125px;
+  margin-bottom: 55px;
+}
+
+.presentation-paris div.fst-div p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #333333;
+  text-align: left;
+  line-height: 24px;
+}
+
+.fst-div h2 {
+  margin-bottom: 35px;
+}
+
+.map-button {
+  display: flex;
+  flex-direction: column;
+  height: 473px;
+  width: 429px;
+}
+
+.map-button img {
+  height: 190px;
+  width: 429px;
+  object-fit: cover;
+  border-radius: 0px 0px 20px 20px;
+}
+.button-text button {
+  height: 54px;
+  width: 154px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.button-text {
+  background-color: #ff5d5d;
+  border-radius: 20px 20px 0px 0px;
+
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.button-text button {
+  /* font-family: TS-Med; */
+  font-size: 15px;
+  border: none;
+}
+.button-text button:hover {
+  cursor: pointer;
+}
+.button-text h2 {
+  font-size: 35px;
+  font-family: TS-Reg;
+}
+
+@media (max-width: 1184px) {
+  main .section1 nav.button-tourist {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+  }
+
+  .section1 nav button {
+    flex: none;
+    height: 47px;
+    width: calc((100% - 30px) / 4);
+    flex-shrink: 0;
+  }
+
+  .section1 .button-tourist button:nth-child(6),
+  .section1 .button-tourist button:nth-child(7) {
+    display: block;
+  }
+
+  div.image-paris {
+    height: 372px;
+  }
+  .image-paris .img-paris-1 {
+    flex: 1;
+    /* border: #ff5d5d solid 3px; */
+  }
+  .image-paris .column-picture-paris {
+    height: 100%;
+    width: 402px;
+  }
+  .image-paris .img-paris-1 img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .section1 .presentation-paris {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .presentation-paris .map-button {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 283px;
+  }
+  /* .presentation-paris .button-text,
+  .presentation-paris .map-button img {
+    flex: 1;
+  } */
+
+  .presentation-paris .map-button img {
+    height: 100%;
+
+    width: 50%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .presentation-paris .button-text {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .section1 nav.button-tourist button:nth-child(1),
+  .section1 nav.button-tourist button:nth-child(2),
+  .section1 nav.button-tourist button:nth-child(3),
+  .section1 nav.button-tourist button:nth-child(4) {
+    height: 64px;
+  } /* height: 190px;
+    width: 429px;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px; */
+}
+
+@media (max-width: 768px) {
+  .section1 h1 {
+    font-size: 32px;
+  }
+  .titre p {
+    font-size: 14px;
+  }
+
+  .section1 .titre {
+    padding: 0px 20px;
+  }
+  main .section1 nav.button-tourist {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding-left: 20px;
+    /* border: #333333 solid 2px; */
+  }
+
+  /* .section1 {
+    border: #333333 solid 2px;
+  } */
+  .section1 nav.button-tourist button {
+    width: fit-content;
+  }
+
+  .section1 nav.button-tourist button:nth-child(1),
+  .section1 nav.button-tourist button:nth-child(2),
+  .section1 nav.button-tourist button:nth-child(3),
+  .section1 nav.button-tourist button:nth-child(4) {
+    height: 50px;
+  }
+  .section1 nav.button-tourist a {
+    gap: 15px;
+  }
+
+  /* image paris */
+  .image-paris .column-picture-paris {
+    display: none;
+  }
+
+  .image-paris img {
+    height: 275px;
+  }
+
+  .section1 .sub-pix {
+    display: none;
+  }
+  .section1.container {
+    padding: 0px;
+  }
+
+  .section1 .presentation-paris {
+    margin-top: -80px;
+    padding: 0px 20px;
+  }
+  /* .presentation-paris:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+  } */
+  .presentation-paris div.fst-div p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  /* mapbutton */
+
+  .presentation-paris .map-button {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 437px;
+  }
+  .presentation-paris .button-text {
+    flex: none;
+    gap: 10px;
+    /* height: 66%; */
+  }
+  .presentation-paris .map-button img {
+    flex: none;
+    /* height: 33%; */
+  }
+
+  .presentation-paris .map-button img {
+    width: 100%;
+    height: 187px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .presentation-paris .button-text {
+    border-radius: 20px 20px 0px 0px;
+    height: 70%;
+  }
+  /* .presentation-paris .button-text button{
+
+} */
+  .MorePictures {
+    position: absolute;
+    bottom: 110px;
+  }
+}

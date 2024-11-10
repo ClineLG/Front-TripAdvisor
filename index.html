@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/fonts.css" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/imgs/favicon-tripadvisor.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+
+    <title>TripAdvisor</title>
+  </head>
+  <body> 
+
+
+   
+ <div class="modal" 
+
+  >
+      <div class="position">
+        <div class="absolute">
+        </div>
+      </div>
+          
+          <div class="position">
+          
+            <form id="a-awesome-form">
+              <button class="close">
+<i class="icon-times" class="close"></i>
+              </button >
+              
+              <h6>Formulaire de contact</h6>
+              <div class="form">
+                <input class="input"
+                type="text"
+                name="firstname"
+                id="firstname"
+                value=""
+                placeholder="Prénom"/> 
+                <input class="input"
+                type="text"
+                name="lastname"
+                id="lastname"
+                value=""
+    
+                placeholder="Nom"
+                />
+                <input class="input" type="text" name="email" id="email" placeholder="E-mail" />
+            
+                <textarea class="input"
+                name="message"
+                id="message"
+                placeholder="Ecrivez votre message..."
+            
+                rows="6"
+                ></textarea>
+                <button class="submit" type="submit" id="submit">Envoyer le Formulaire</button> 
+    
+    
+            </form>
+         
+           </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <a class="hidden" href=""><i class="icon-menu_bars"></i></a>
+        <a href="https://www.tripadvisor.fr/">
+          <img
+            src="./assets/imgs/Tripadvisor_logo.svg"
+            alt="Tripadvisor_logo"
+          />
+        </a>
+
+        <nav class="logos_header">
+          <a href="">
+            <i class="icon-pencil"></i>
+            <p>Avis</p>
+          </a>
+          <a href="">
+            <i class="icon-heart"></i>
+            <p>Voyages</p>
+          </a>
+          <a href=""
+            ><i class="icon-notification_bell"></i>
+            <p>Alertes</p></a
+          >
+
+          <button class="connect">Connectez-vous</button>
+          <a class="hidden" href=""
+            ><i class="icon-search"></i
+          ></a>
+          <a href=""
+            ><i class="icon-empty_cart"></i>
+            <p>Panier</p></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section1 container">
+        <div class="titre">
+          <h1><span class="red-H1">Explorez</span> Paris</h1>
+          <p>
+            Les revenus influencent le choix des expériences présentées sur
+            cette page : <a href="">en savoir plus.</a>
+          </p>
+        </div>
+        <nav class="button-tourist">
+          <button>
+            <a href="">
+              Hôtel
+              <i class="icon-hotels"></i>
+            </a>
+          </button>
+
+          <button>
+            <a href="">
+              Locations de vacances
+              <i class="icon-vacation_rentals"></i>
+            </a>
+          </button>
+          <button>
+            <a href="">Activités<i class="icon-attractions"></i></a>
+          </button>
+
+          <button>
+            <a href="">Restaurants<i class="icon-restaurants"></i></a>
+          </button>
+
+          <button>
+            <a href="">Forums de voyage<i class="icon-forums"></i></a>
+          </button>
+          <button>
+            <a href="">Vols<i class="icon-flights"></i></a>
+          </button>
+          <button>
+            <a href="">Croisières<i class="icon-cruises"></i></a>
+          </button>
+
+          <button>
+            <a href="">plus <i class="icon-more_horizontal"></i></a>
+          </button>
+        </nav>
+
+        <div class="image-paris">
+          <div class="img-paris-1">
+            <img src="./assets/imgs/view-paris-1.jpg" alt="view-paris-1" />
+             <button class="MorePictures"> <a href="">
+              <i class="icon-photo"></i><span>Toutes les photos</span>
+             </a></button>
+          </div>
+
+          <div class="column-picture-paris">
+            <img src="./assets/imgs/view-paris-2.jpg" alt="view-paris-2" />
+            <img src="./assets/imgs/view-paris-3.jpg" alt="view-paris-3" />
+          </div>
+        </div>
+
+        <div class="sub-pix">
+          <nav>
+            <a href="">Europe </a>
+            <i class="icon-single_chevron_right"></i>
+
+            <a href="">France </a>
+            <i class="icon-single_chevron_right"></i>
+
+            <a href="">Ile-de-France </a>
+            <i class="icon-single_chevron_right"></i>
+
+            <a href="">Paris </a>
+            <i class="icon-single_chevron_down"></i>
+
+          </nav>
+
+          <p>Visiter : Paris</p>
+        </div>
+
+        <div class="presentation-paris">
+          <div class="fst-div">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+
+          <div class="map-button">
+            <div class="button-text">
+              <h2>Paris : commencez à organiser !</h2>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créez un voyage</button>
+            </div>
+            <img src="./assets/imgs/maps_cnuhsr.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="section2 container">
+        <h2>Paris : les immanquables</h2>
+        <div class="se-divertir">
+          <div class="text">
+            <h2>Se divertir</h2>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+
+          <nav class="carroussel">
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="./assets/imgs/eiffeltoren.jpg"
+                  alt="eiffeltower"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Arc de Triomphe</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 139 901
+                </p>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="./assets/imgs/arc-de-triomphe-at-night.jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Musée du Louvre</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 56 987
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="assets/imgs/louvre.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Tour Eiffel</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 100 845
+                </p>
+                <p>Bâtiments architecturaux, Musées d'art</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="assets/imgs/vue-de-la-cour-d-honneur (1).jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Musée Rodin</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 139 901
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>Musées spécialisés</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="./assets/imgs/the-amazingly-detailed.jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Cathédrale Notre-Dame de Paris</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 139 901
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="./assets/imgs/the-bookstore.jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Librairie Shakespear and Company</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 140 321
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>Bibliothèques, Grands magasins</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="assets/imgs/20180601-122841-largejpg.jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Musée d'Orsay</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 67 761
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>Musées d'art</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img
+                  class="premiere-image"
+                  src="./assets/imgs/marche-vernaison-maison.jpg"
+                />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Marché aux Puces de Saint-Ouen</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 103 495
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>
+                  Antiquaires, Marchés aux puces & Marchés de rue Saint-Ouen,
+                  France À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!-- deuxieùe carousselle -->
+
+        <div class="se-restaurer">
+          <div class="text">
+            <h2>Se restaurer</h2>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a href="">Tout afficher</a>
+          </div>
+
+          <nav class="carroussel">
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="assets/imgs/meal6.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Frenchie</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 1297
+                </p>
+                <p>
+                  €€€€ · Française, Végétariens bienvenus, Plats sans gluten
+                </p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="./assets/imgs/meal5.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>114 Faubourg</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 1754
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>€€ · Française, Européenne, Végétariens bienvenus</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="assets/imgs/meal4.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Verjus</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 545
+                </p>
+                <p>€€€ · Française, Européenne, Moderne</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="./assets/imgs/meal3.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>ASPIC</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 2981
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>€€€€ · Française, Européenne, Saine</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="./assets/imgs/meal2.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Bistrot chic</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 1345
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>€€€ · Française, Européenne, Saine, Moderne</p>
+              </div>
+            </a>
+
+            <a class="photo" href="">
+              <div class="photo-logo">
+                <img class="premiere-image" src="./assets/imgs/meal1.jpg" />
+                <img
+                  class="logoTrip"
+                  src="./assets/imgs/logotripcarrousel.jpeg"
+                  alt="logotripadvisor"
+                />
+                <i class="icon-heart"></i>
+              </div>
+
+              <div class="text-explicatif">
+                <h3>Vive les huîtres</h3>
+                <p>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_full"> </i>
+                  <i class="icon-bubble_rating_half"> </i> 4340
+                </p>
+                <!-- <img src="" alt="" /> 139 901 -->
+                <p>€€€€ · Française, Moderne, Bar à vins</p>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section3 container">
+        <h2>Guide de voyageurs</h2>
+        <div class="mom-guide">
+         
+          <div class="guide-voyageur">
+            <img src="./assets/imgs/visit1.jpg" alt="" />
+            <div>
+              <h2>Best summer things to do in Paris | Eatwith</h2>
+              <p>36 articles</p>
+              <div class="derniere-ligne">
+                <img src="./assets/imgs/forks-icon.jpg" alt="" />
+                <p>Par<span> Eatwith</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-voyageur">
+            <img src="./assets/imgs/visit2.jpg" alt="" />
+            <div>
+              <h2>Les 10 monuments et musées de Paris à faire</h2>
+              <p>10 articles</p>
+              <div class="derniere-ligne">
+                <img src="./assets/imgs/topito-com.jpg" alt="" />
+                <p>Par<span> Topito</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-voyageur">
+                          <img src="./assets/imgs/visit3.jpg" alt="" />
+
+            <div>
+              <h2>Top 10 des choses à faire ou à voir dans le 14ème</h2>
+              <p>10 articles</p>
+              <div class="derniere-ligne">
+                <img src="./assets/imgs/topito-com.jpg" alt="" />
+                <p>Par<span> Topito</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer >
+      <button class="magic">
+        <img class="image dos" src="./assets/imgs/favicon-tripadvisor.jpg" alt="">      
+
+        <img class="image" src="./assets/imgs/favicon-tripadvisor.svg" alt="" />
+
+        <img class="pix dos" src="./assets/imgs/495-4950301_tripadvisor-logo-vector-hd-png-download.png" alt="">
+        <img class="pix " src="./assets/imgs/495-4950301_tripadvisor-logo-vector-hd-png-download bis).png" alt="">
+
+</button>
+      
+      <p>
+        Made at <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a> by <a href="https://github.com/ClineLG" target="_blank">Celine Leguelvouit</a>
+      </p>
+    </footer>
+  </body>
+</html>

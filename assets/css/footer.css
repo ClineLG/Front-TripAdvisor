@@ -1,0 +1,81 @@
+footer {
+  height: 156px;
+  background-color: #f9f1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+footer .magic {
+  height: 50px;
+  width: 50px;
+  background-color: #f9f1ec;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* border: solid 1px black; */
+  object-fit: cover;
+  position: absolute;
+  bottom: 3px;
+  right: 2px;
+  z-index: 1;
+  /* display: none; */
+}
+
+.pix {
+  margin-top: 5px;
+  height: 35px;
+  width: 70px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 7px;
+  right: -10px;
+  display: none;
+  z-index: 1;
+  border-radius: 70px;
+}
+
+.magic.img .image {
+  display: none;
+}
+.magic.img .pix {
+  display: block;
+}
+
+.magic:hover .dos {
+  z-index: 2;
+  cursor: help;
+}
+.magic .img {
+  display: block;
+}
+/* .magic:hover .tres.deux {
+  z-index: 2;
+  cursor: help;
+} */
+
+/* .funky .magic .image.myster {
+  display: none;
+}
+
+.funky .magic .pix.myster {
+  display: block;
+} */
+
+footer a {
+  font-family: TS-Med;
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  font-size: 15px;
+}

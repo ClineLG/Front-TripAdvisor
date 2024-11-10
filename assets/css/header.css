@@ -1,0 +1,136 @@
+/* header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* border: #333333 8px solid; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  /* left: 10; */
+  /* border-bottom: #333333 0.2px solid; */
+}
+
+header .container {
+  /* border-bottom: grey solid 1px; */
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container img {
+  /* border: solid 1px black; */
+
+  height: 40px;
+}
+
+.logos_header {
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* align-content: baseline; */
+  gap: 20px;
+}
+
+.logos_header a {
+  padding: 0px 5px;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  gap: 7px;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-radius: 50px;
+
+  /* padding: 0px 5px; */
+  /* border: solid 1px black; */
+}
+header .container a {
+  font-size: 20px;
+}
+/* .logos_header a i {
+    padding: 0px 0px 10px 0px;
+  } */
+
+.logos_header a:hover {
+  text-decoration: none;
+  color: black;
+
+  background-color: #f3f3f3;
+}
+
+.logos_header button {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  font-family: TS-Reg, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.logos_header button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #444444;
+}
+.container .hidden {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container .logos_header a p {
+    display: none;
+  }
+  .container .logos_header a i {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container .logos_header a:not(:nth-child(6), :nth-child(5)),
+  header .container .logos_header button {
+    display: none;
+  }
+
+  /* header .container a i:first-child {
+    color: black;
+    padding-right: 15px;
+  } */
+  header .container a:nth-child(2) img {
+    height: 30px;
+  }
+
+  header .container .hidden {
+    display: block;
+    color: black;
+  }
+  body header .container {
+    /* justify-content: space-between; */
+    padding: 0px 20px;
+  }
+
+  header .container .logos_header a.hidden {
+    /* gap: -10px; */
+    /* padding: 10px; */
+    /* border: #444444 solid 3px; */
+    padding-top: 10px;
+  }
+
+  header .container .logos_header {
+    gap: 0px;
+    /* border: #444444 solid 3px; */
+  }
+}
+
+.scrollHide {
+  border-bottom: rgb(113, 112, 112) 1px solid;
+}

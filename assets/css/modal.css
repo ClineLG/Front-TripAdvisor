@@ -1,0 +1,105 @@
+.hide {
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+}
+
+.hide .position {
+  position: relative;
+}
+
+.hide .absolute {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.695);
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.hide form {
+  z-index: 4;
+  position: absolute;
+  top: 180px;
+  left: calc((100% / 2) - 242px);
+  background-color: rgb(255, 255, 255);
+  height: 577px;
+  width: 485px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 15px;
+}
+.hide h6 {
+  font-family: TS-Med;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+  /* border: black solid 2px; */
+}
+.hide .close {
+  align-self: flex-end;
+
+  border: none;
+  width: 28px;
+  background-color: white;
+}
+.hide i {
+  color: gray;
+  font-size: 25px;
+}
+
+.hide i:hover {
+  cursor: pointer;
+  color: black;
+}
+.hide .form {
+  align-self: center;
+  /* align-self: ; */
+  /* border: black 2px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  gap: 22px;
+  width: 60%;
+}
+
+.hide input {
+  width: 100%;
+  height: 55px;
+  border: black solid 2px;
+  font-family: TS-Med;
+  font-size: 15px;
+  padding: 10px;
+  color: black;
+}
+
+.hide textarea {
+  width: 100%;
+  height: 115px;
+  border: black solid 2px;
+  font-family: TS-Med;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+
+.hide #submit {
+  background-color: #07aa6c;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0px;
+  width: 70%;
+  font-family: TS-Reg;
+  font-size: 15px;
+}
+.hide #submit:hover {
+  background-color: #34e1a1;
+  cursor: pointer;
+}
+form {
+  display: none;
+}

@@ -1,0 +1,89 @@
+.mom-guide {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  margin-bottom: 90px;
+  scrollbar-width: none;
+  /* border: black 2px solid; */
+}
+.guide-voyageur {
+  flex-shrink: 0;
+  width: 33%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* border: #333333 solid 2px; */
+}
+
+.guide-voyageur img {
+  height: 275px;
+  width: 100%;
+}
+
+.derniere-ligne {
+  display: flex;
+  gap: 2px;
+}
+
+.guide-voyageur .derniere-ligne img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 4px;
+  object-fit: cover;
+}
+
+.guide-voyageur h2 {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.guide-voyageur p {
+  line-height: 25px;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+.guide-voyageur span {
+  font-family: TS-Med;
+}
+@media (max-width: 1024px) {
+  /* .mom-guide {
+    /* border: black solid 2px; */
+  /* }  */
+  .section3 .guide-voyageur {
+    width: 38.5%;
+  }
+
+  .section3 .guide-voyageur img {
+    height: 255px;
+  }
+  .guide-voyageur .derniere-ligne img {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .section3 .guide-voyageur {
+    width: 64%;
+  }
+
+  .section3 .guide-voyageur img {
+    width: 100%;
+    height: 64%;
+    object-fit: cover;
+  }
+  .guide-voyageur .derniere-ligne img {
+    height: 25px;
+    width: 25px;
+  }
+  .section3.container {
+    padding: 0 px;
+    /* border: black solid 10px; */
+  }
+  .section3 {
+    padding-left: 20px;
+  }
+}
