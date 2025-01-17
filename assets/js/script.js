@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           } else {
             if (data.email) console.log(data);
             const response = await axios.post(
-              "https://site--backend-form-tripadvisor--dm4qbjsg7dww.code.run/form",
+              "https://site--formtripadvisor--phx29rm2mv76.code.run/form",
               data
             );
             console.log(response);
